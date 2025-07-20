@@ -1,0 +1,28 @@
+{
+  "name": "recycling-sorter-poc",
+  "version": "1.0.0",
+  "description": "POC for recycling sorter using OpenAI Vision API",
+  "main": "dist/simulation.js",
+  "type": "module",
+  "license": "MIT",
+  "author": "Nathan Broadbent",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/simulation.js",
+    "simulation": "tsx src/simulation.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "openai": "^4.24.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "@biomejs/biome": "^1.9.4"
+  }
+}
